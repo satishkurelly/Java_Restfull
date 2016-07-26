@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import dto.Login;
 
 
-public class Access {
+public class LoginAccess {
 	public ArrayList<Login> getLoginPage(Connection con) throws SQLException {
 		ArrayList<Login> loginList = new ArrayList<Login>();
 		PreparedStatement stmt = con.prepareStatement("SELECT * FROM login_table");
