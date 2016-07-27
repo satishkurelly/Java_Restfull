@@ -20,7 +20,7 @@ public class User_Data {
 		String user_profile = null;
 		ArrayList<User_Details> user_profileList = new ArrayList<User_Details>();
 		try {
-			user_profileList = new AccessManager().getuser_profilepage();
+			user_profileList = new AccessManager().getUser_ProfileAccesspage();
 			Gson gson = new Gson();
 			user_profile = gson.toJson(user_profileList);
 		} catch (Exception e) {

@@ -12,8 +12,8 @@ public class User_ProfileAccess {
 		ArrayList<User_Details> loginList = new ArrayList<User_Details>();
 		Database db = new Database();
 		Connection con = db.getConnection();
-		User_Profileaccess = new User_Profile();
-		user_profileList = access.getUser_ProfilePage(con);
-		return user_profileList;
+		User_Details = new User_Details();
+		user_details = access.getUser_DetailsPage(con);
+		return User_DetailsList;
 	}
 }
